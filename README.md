@@ -2,10 +2,10 @@
 
 Public Julia package registry for the Oodi scientific-computing ecosystem.
 
-**Status: bootstrapped, empty.** This repository contains Julia registry
-metadata, not the source code of a Julia package. No packages or versions
-have been registered yet, and `Pkg.add("Oodi")` will not work through this
-registry until appropriate versions have been reviewed and registered.
+**Status: Episteme 0.1.0 is the first registered package.** This
+repository contains Julia registry metadata, not the source code of a
+Julia package. `Pkg.add("Oodi")` will not work through this registry
+until Oodi and its other dependencies are registered.
 
 A public registry does **not** make any source repository public. However,
 the registry metadata itself is public: registered package names, UUIDs,
@@ -33,6 +33,24 @@ The registry only catalogs versions and their source locations. Access to
 a private source repository still requires separate Git credentials and
 GitHub authorization. Do not put credentials or tokens in registry files.
 
+## Install Episteme
+
+After General and this registry are installed, request Episteme by
+name and version:
+
+```julia
+using Pkg
+Pkg.add(name = "Episteme", version = "0.1.0")
+using Episteme
+```
+
+Episteme 0.1.0 keeps the former OodiCore UUID
+`7c15cd61-9c6a-4671-bc94-9960963998ac`. The Git tag `v0.1.0`
+originally pointed at OodiCore commit
+`3d8a44177b9d2009f1f44168608881ae604b4da1`. Replacing that tag is a
+separate, already authorized release step. Installation follows the
+registry tree hash rather than the tag.
+
 ## Development is not registration
 
 Active cross-package work may use `Pkg.develop` and exact Git revisions.
@@ -49,8 +67,8 @@ environment.
 ## Maintainer workflow (provisional)
 
 The ecosystem-wide SemVer, compatibility, release and approval contract
-is being defined separately. **Do not register the first package merely
-because this empty registry is now installable.**
+is being defined separately. **Do not register another package merely
+because this registry is now installable.**
 
 When the package owner has explicitly approved a version and its
 visibility, the intended review-based workflow is:
