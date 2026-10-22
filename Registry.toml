@@ -1,0 +1,6 @@
+name = "OodiRegistry"
+uuid = "b2a74440-ffba-4ab6-994c-a86bb9592c58"
+repo = "https://github.com/ahojukka5/OodiRegistry.git"
+description = "Julia package registry for the Oodi scientific computing ecosystem"
+
+[packages]
