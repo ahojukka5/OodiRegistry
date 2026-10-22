@@ -4,3 +4,4 @@ repo = "https://github.com/ahojukka5/OodiRegistry.git"
 description = "Julia package registry for the Oodi scientific computing ecosystem"
 
 [packages]
+7c15cd61-9c6a-4671-bc94-9960963998ac = { name = "Episteme", path = "E/Episteme" }
