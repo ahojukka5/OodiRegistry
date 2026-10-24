@@ -1,0 +1,12 @@
+[0]
+AbaqusReader = "0.2"
+CxxWrap = "0.17"
+GeometryBasics = "0.4-0.5"
+Gmsh = "0.3"
+GmshIO = "0.1"
+MPI = "0.20"
+Metis = "1.4.0-1"
+OCCT_jll = "7.9.0-7"
+PARMETIS_jll = "4"
+WriteVTK = "1"
+Zlib_jll = "1"
