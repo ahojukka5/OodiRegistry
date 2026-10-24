@@ -2,9 +2,9 @@
 
 Public Julia package registry for the Oodi scientific-computing ecosystem.
 
-**Status: Episteme 0.1.0 is the first registered package.** This
-repository contains Julia registry metadata, not the source code of a
-Julia package. `Pkg.add("Oodi")` will not work through this registry
+**Registered packages:** Episteme, DelonePortable, Delone and Monge, each at
+`0.1.0`. This repository contains Julia registry metadata, not the source code
+of a Julia package. `Pkg.add("Oodi")` will not work through this registry
 until Oodi and its other dependencies are registered.
 
 A public registry does **not** make any source repository public. However,
@@ -50,6 +50,41 @@ originally pointed at OodiCore commit
 `3d8a44177b9d2009f1f44168608881ae604b4da1`. Replacing that tag is a
 separate, already authorized release step. Installation follows the
 registry tree hash rather than the tag.
+
+## Install geometry packages
+
+With General and OodiRegistry installed, add the packages by name:
+
+```julia
+using Pkg
+Pkg.add(name = "DelonePortable", version = "0.1.0")
+Pkg.add(name = "Delone", version = "0.1.0")
+Pkg.add(name = "Monge", version = "0.1.0")
+
+using Monge
+@assert Monge.Geometry.volume(Monge.Modeling.box(1, 2, 3)) ≈ 6
+```
+
+DelonePortable is an independent package in the Delone repository's `portable/`
+subdirectory. Pkg retrieves that subdirectory through its registry entry; no
+sibling checkout is needed. Its runtime dependency is the SHA standard library,
+with an optional Episteme extension.
+
+Delone and Monge require Julia 1.10 or newer. Published native wrappers cover
+Julia 1.10–1.13 on Linux x86_64 with glibc and macOS aarch64. Other native
+platforms and Julia ABIs are not qualified by these releases.
+
+Delone's portable contracts and Julia algorithms load independently of the live
+Netgen provider. To use that optional provider, add its dependencies explicitly:
+
+```julia
+Pkg.add(["CxxWrap", "OCCT_jll", "Zlib_jll"])
+using Delone
+Delone.load_netgen!()
+```
+
+Normal native installation downloads the published artifacts. Private package
+source access still requires separate Git authentication, as described above.
 
 ## Development is not registration
 

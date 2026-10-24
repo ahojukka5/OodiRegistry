@@ -1,0 +1,4 @@
+name = "DelonePortable"
+uuid = "6d11b64e-dfb8-45b3-be02-3fc6737f9cd8"
+repo = "https://github.com/ahojukka5/Delone.jl.git"
+subdir = "portable"

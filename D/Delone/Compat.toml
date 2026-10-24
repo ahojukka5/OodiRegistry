@@ -1,0 +1,10 @@
+[0]
+Atomix = "1"
+DelonePortable = "0.1"
+Episteme = "0.1"
+KernelAbstractions = "0.9"
+LazyArtifacts = "1.10.0-1"
+Libdl = "1.10.0-1"
+LinearAlgebra = "1.10.0-1"
+SHA = ["0.7", "1"]
+julia = "1.10.0-1"

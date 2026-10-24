@@ -1,0 +1,12 @@
+[0]
+AbaqusReader = "bc6b9049-e460-56d6-94b4-a597b2c0390d"
+CxxWrap = "1f15a43c-97ca-5a2a-ae31-89f07a497df4"
+GeometryBasics = "5c1252a2-5f33-56bf-86c9-59e7332b4326"
+Gmsh = "705231aa-382f-11e9-3f0c-b7cb4346fdeb"
+GmshIO = "264f93c6-95af-46b2-abce-8c9323cca308"
+MPI = "da04e1cc-30fd-572f-bb4f-1f8673147195"
+Metis = "2679e427-3c69-5b7f-982b-ece356f1e94b"
+OCCT_jll = "baad4e97-8daa-5946-aac2-2edac59d34e1"
+PARMETIS_jll = "b247a4be-ddc1-5759-8008-7e02fe3dbdaa"
+WriteVTK = "64499a7a-5c06-52f2-abe2-ccb03c286192"
+Zlib_jll = "83775a58-1f1d-513f-b197-d71354ab007a"
