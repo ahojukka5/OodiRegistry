@@ -1,0 +1,10 @@
+[0]
+Artifacts = "56f22d72-fd6d-98f1-02f0-08ddc0907c33"
+CxxWrap = "1f15a43c-97ca-5a2a-ae31-89f07a497df4"
+Episteme = "7c15cd61-9c6a-4671-bc94-9960963998ac"
+Libdl = "8f399da3-3557-5675-b5ff-fb832c97cbdb"
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+OCCT_jll = "baad4e97-8daa-5946-aac2-2edac59d34e1"
+SHA = "ea8e919c-243c-51af-8825-aaa63cd721ce"
+TOML = "fa267f1f-6049-4f14-aa54-33bafae1ed76"
+Zlib_jll = "83775a58-1f1d-513f-b197-d71354ab007a"

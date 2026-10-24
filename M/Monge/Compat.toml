@@ -1,0 +1,11 @@
+[0]
+Artifacts = "1"
+CxxWrap = "0.17"
+Episteme = "0.1"
+Libdl = "1"
+LinearAlgebra = "1"
+OCCT_jll = "7.9.0-7"
+SHA = ["0.7", "1"]
+TOML = "1"
+Zlib_jll = "1"
+julia = "1.10.0-1"

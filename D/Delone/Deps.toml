@@ -1,0 +1,9 @@
+[0]
+Atomix = "a9b6321e-bd34-4604-b9c9-b65b8de01458"
+DelonePortable = "6d11b64e-dfb8-45b3-be02-3fc6737f9cd8"
+Episteme = "7c15cd61-9c6a-4671-bc94-9960963998ac"
+KernelAbstractions = "63c18a36-062a-441e-b654-da1e3ab1ce7c"
+LazyArtifacts = "4af54fe1-eca0-43a8-85a7-787d91b784e3"
+Libdl = "8f399da3-3557-5675-b5ff-fb832c97cbdb"
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+SHA = "ea8e919c-243c-51af-8825-aaa63cd721ce"
