@@ -8,3 +8,4 @@ description = "Julia package registry for the Oodi scientific computing ecosyste
 6d11b64e-dfb8-45b3-be02-3fc6737f9cd8 = { name = "DelonePortable", path = "D/DelonePortable" }
 7c15cd61-9c6a-4671-bc94-9960963998ac = { name = "Episteme", path = "E/Episteme" }
 7c4e8f2a-9b1d-4e6c-a3f8-2d5e6b7c8a9f = { name = "Monge", path = "M/Monge" }
+fd56f62f-4b55-45c2-8dc5-80d3818978b9 = { name = "Ritz", path = "R/Ritz" }

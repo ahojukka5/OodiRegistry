@@ -1,0 +1,8 @@
+[0]
+Episteme = "7c15cd61-9c6a-4671-bc94-9960963998ac"
+ForwardDiff = "f6369f11-7733-5829-9624-2563aa707210"
+KernelAbstractions = "63c18a36-062a-441e-b654-da1e3ab1ce7c"
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+SparseArrays = "2f01184e-e22b-5df5-ae63-d93ebab69eaf"
+StaticArrays = "90137ffa-7385-5640-81b9-e52037218182"
+Tensors = "48a634ad-e948-5137-8d70-aa71f2a747f4"
