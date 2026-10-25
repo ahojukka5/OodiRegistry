@@ -1,5 +1,11 @@
 # OodiRegistry agent guidance
 
+[OodiHandbook](https://github.com/ahojukka5/OodiHandbook/blob/v0.1.0/index.qmd)
+is the source of common rules. Follow the repository's explicitly adopted
+immutable release (AUTH-003). Use [reviewed master guidance](https://github.com/ahojukka5/OodiHandbook/blob/master/index.qmd)
+as a voluntary improvement target (AUTH-006). Local instructions provide
+technical details and do not override the Handbook.
+
 OodiRegistry is a **public Julia Pkg registry**, not a Julia package and
 not an executable research or integration-test repository.
 
@@ -15,9 +21,9 @@ not an executable research or integration-test repository.
    `LocalRegistry.jl` tooling. Do not hand-edit `Versions.toml`,
    `Deps.toml`, or `Compat.toml` to invent releases or replace the
    tree hash of an existing released version.
-5. Release versioning and ecosystem compatibility rules will be
-   standardized separately. The bootstrap README's proposed workflow
-   is not approval to register any package.
+5. Follow Handbook PUB-005 and its versioning guide for release decisions.
+   Package compatibility remains with its software owner. The bootstrap
+   README's proposed workflow is not approval to register any package.
 6. Keep changes small and reviewable: issue, focused branch, tests,
    PR, human approval before merge. No automatic release on a push to
    a development branch.
