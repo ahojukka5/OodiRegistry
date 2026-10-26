@@ -1,0 +1,12 @@
+[0]
+Delone = "0.1.1-0.1"
+DelonePortable = "0.1"
+Episteme = "0.1"
+Irons = "0.1"
+KernelAbstractions = "0.9.37-0.9"
+LinearAlgebra = "1"
+Ritz = "0.1"
+SparseArrays = "1"
+StaticArrays = "1.9.0-1"
+Tensors = "1.16.0-1"
+julia = "1.13.1-1"
