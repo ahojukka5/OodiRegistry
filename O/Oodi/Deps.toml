@@ -1,0 +1,11 @@
+[0]
+Delone = "0a3734f8-1dfd-4ffb-90f2-cbaa38dcac37"
+DelonePortable = "6d11b64e-dfb8-45b3-be02-3fc6737f9cd8"
+Episteme = "7c15cd61-9c6a-4671-bc94-9960963998ac"
+Irons = "6effb246-a18c-4762-80ac-31f90ae3f823"
+KernelAbstractions = "63c18a36-062a-441e-b654-da1e3ab1ce7c"
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+Ritz = "fd56f62f-4b55-45c2-8dc5-80d3818978b9"
+SparseArrays = "2f01184e-e22b-5df5-ae63-d93ebab69eaf"
+StaticArrays = "90137ffa-7385-5640-81b9-e52037218182"
+Tensors = "48a634ad-e948-5137-8d70-aa71f2a747f4"
