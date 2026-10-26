@@ -2,10 +2,9 @@
 
 Public Julia package registry for the Oodi scientific-computing ecosystem.
 
-**Registered packages:** Episteme, DelonePortable, Delone and Monge, each at
-`0.1.0`. This repository contains Julia registry metadata, not the source code
-of a Julia package. `Pkg.add("Oodi")` will not work through this registry
-until Oodi and its other dependencies are registered.
+**Registered packages:** Episteme, DelonePortable, Delone, Monge, Ritz, Irons
+and Oodi, each at `0.1.0`. This repository contains Julia registry metadata,
+not the source code of a Julia package.
 
 A public registry does **not** make any source repository public. However,
 the registry metadata itself is public: registered package names, UUIDs,
@@ -18,20 +17,34 @@ or unpublished package metadata without explicit authorization.
 ```julia
 using Pkg
 
+Pkg.Registry.add("General")
 Pkg.Registry.add(url = "https://github.com/ahojukka5/OodiRegistry.git")
 Pkg.Registry.status()
 ```
 
-Julia Pkg can use this registry alongside the official `General` registry.
-If `General` is not yet installed on this machine, add it explicitly:
-
-```julia
-Pkg.Registry.add("General")
-```
+Julia Pkg uses both the official `General` registry and OodiRegistry. Initialize
+General first, including in a completely empty depot.
 
 The registry only catalogs versions and their source locations. Access to
 a private source repository still requires separate Git credentials and
 GitHub authorization. Do not put credentials or tokens in registry files.
+
+## Install Oodi
+
+After adding both registries, use Julia 1.13.1 or newer and authenticated Git
+access to the private package sources:
+
+```julia
+using Pkg
+Pkg.add(name = "Oodi", version = "0.1.0")
+using Oodi
+```
+
+Oodi resolves its core owners by registered version: Delone, DelonePortable,
+Episteme, Ritz and Irons. It needs no sibling checkout or Git revision override.
+Optional specialists are installed separately and retain their own source
+access and qualification requirements. Installation and package loading do not
+by themselves establish numerical qualification of an optional integration.
 
 ## Install Episteme
 
