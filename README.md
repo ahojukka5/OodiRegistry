@@ -2,7 +2,7 @@
 
 Public Julia package registry for the Oodi scientific-computing ecosystem.
 
-**Registered packages:** Episteme, DelonePortable, Monge, Ritz, Irons and Oodi
+**Registered packages:** Episteme, DelonePortable, Monge, Ritz, Irons, Noether and Oodi
 at `0.1.0`; Delone at `0.1.0` and `0.1.1`. This repository contains Julia
 registry metadata, not the source code of a Julia package.
 
@@ -46,6 +46,22 @@ needs no sibling checkout or Git revision override.
 Optional specialists are installed separately and retain their own source
 access and qualification requirements. Installation and package loading do not
 by themselves establish numerical qualification of an optional integration.
+
+## Install Noether
+
+With General and OodiRegistry installed, use Julia 1.13.1 or newer and
+authenticated Git access to the private source repository:
+
+```julia
+using Pkg
+Pkg.add(name = "Noether", version = "0.1.0")
+using Noether
+```
+
+Noether owns material-point and physical-law semantics. Its only runtime
+dependency is Tensors; it does not require another Oodi package. The first
+release preserves each law's documented assumptions and limits. Representative
+composition with Oodi is qualified separately from package installation.
 
 ## Install Episteme
 
