@@ -2,7 +2,8 @@
 
 Public Julia package registry for the Oodi scientific-computing ecosystem.
 
-**Registered packages:** Episteme, DelonePortable, Monge, Ritz, Irons, Noether and Oodi
+**Registered packages:** Episteme, DelonePortable, Monge, Ritz, Irons, Noether,
+GmshIO and Oodi
 at `0.1.0`; Delone at `0.1.0` and `0.1.1`. This repository contains Julia
 registry metadata, not the source code of a Julia package.
 
@@ -62,6 +63,24 @@ Noether owns material-point and physical-law semantics. Its only runtime
 dependency is Tensors; it does not require another Oodi package. The first
 release preserves each law's documented assumptions and limits. Representative
 composition with Oodi is qualified separately from package installation.
+
+## Install GmshIO
+
+With General and OodiRegistry installed and authenticated Git access to the
+private source repository, install the format reader and writer by name:
+
+```julia
+using Pkg
+Pkg.add(name = "GmshIO", version = "0.1.0")
+using GmshIO
+```
+
+GmshIO reads ASCII MSH 2.x and 4.1 and writes ASCII MSH 4.1. It is pure Julia,
+has no runtime dependencies and does not invoke the Gmsh meshing engine.
+Release qualification covers Julia 1.10 (LTS), 1.11, 1.12 and 1.13 with clean
+installation, loading and the full package test suite. The source's broad
+`julia = "1"` declaration is preserved; earlier Julia minors are not qualified
+by this release. See the [release qualification record](https://github.com/ahojukka5/GmshIO.jl/issues/8).
 
 ## Install Episteme
 
